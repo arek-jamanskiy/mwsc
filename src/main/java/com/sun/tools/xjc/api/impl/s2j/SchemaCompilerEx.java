@@ -189,7 +189,7 @@ public final class SchemaCompilerEx extends ErrorReceiver implements SchemaCompi
         // eventually we need a proper URI class that works for us.
         try {
             new URL(systemId);
-        } catch( MalformedURLException _ ) {
+        } catch( MalformedURLException a ) {
             try {
                 new URI(systemId);
             } catch (URISyntaxException e ) {
